@@ -1,0 +1,85 @@
+.AboutPageContainer {
+  padding: 0;
+}
+
+.TitleContainer {
+  position: absolute;
+  top: 141px;
+  height: 46px;
+}
+
+.Title {
+  color: #495057;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.Title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+
+.Title span {
+  color: #d4a373;
+  text-decoration: none;
+}
+
+.Title,
+.Description {
+  text-align: center;
+}
+
+.Description {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: justify;
+  color: #495057;
+  /* margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem; */
+}
+
+.Main {
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Body {
+  position: absolute;
+  top: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .Main {
+    min-height: 140vh;
+  }
+
+  .Body {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .Main {
+    min-height: 190vh;
+  }
+
+  .Body {
+    max-width: 80%;
+  }
+}

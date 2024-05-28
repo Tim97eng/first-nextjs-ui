@@ -1,0 +1,213 @@
+.FooterContainer {
+  /* position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
+  background-color: #343a40;
+
+  display: flex;
+  align-items: center; */
+
+  /* Taken from the boilerplate code, sets the footer to bottom but needs content to check */
+
+  display: flex;
+  flex: 1;
+  background-color: #212529;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  width: 100%;
+}
+
+.FooterLowerContainer {
+  background-color: #343a40;
+  height: 80px;
+  width: 100%;
+
+  position: relative;
+  bottom: -240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterTitleLeft {
+  position: absolute;
+  width: 198px;
+  height: 18px;
+  left: 10%;
+  /* bottom: 31px; */
+
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #e5e5e5;
+}
+
+.FooterTitleMiddle {
+  position: absolute;
+  width: 198px;
+  height: 18px;
+  left: calc(50% - 198px / 2);
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #e5e5e5;
+}
+
+.FooterTitleEnd {
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  /* left: calc(50% - 98px/2 + 500px); */
+  right: 10%;
+
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #e5e5e5;
+}
+
+.ContactPublisher {
+  position: absolute;
+  left: 6%;
+  margin-top: -100px;
+}
+
+.Explorate {
+  position: absolute;
+  left: 31%;
+  text-align: center;
+}
+
+.Headquarters {
+  position: absolute;
+  left: 57%;
+  width: 100px;
+  margin-bottom: 100px;
+}
+
+.Connections {
+  position: absolute;
+  left: 82%;
+
+  margin-bottom: 120px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactPublisher p,
+.Explorate p,
+.Headquarters p,
+.Connections p {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  color: #ffffff;
+}
+
+.ContactPublisher ul,
+.Explorate ul,
+.Headquarters ul {
+  display: contents;
+  text-align: center;
+  list-style: none;
+}
+
+.ContactPublisher li,
+.Explorate li,
+.Headquarters li {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.IconImage {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .FooterLowerContainer {
+    height: 94px;
+  }
+
+  .FooterTitleLeft {
+    position: absolute;
+    bottom: 60px;
+    width: 198px;
+    height: 18px;
+    left: calc(50% - 198px / 2);
+    /* bottom: 31px; */
+
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #e5e5e5;
+  }
+
+  .FooterTitleMiddle {
+    position: absolute;
+    width: 198px;
+    height: 18px;
+    left: 10%;
+    /* bottom: 31px; */
+  }
+
+  .ContactPublisher {
+    position: absolute;
+    margin-bottom: 180px;
+    left: 6%;
+  }
+
+  .Explorate {
+    position: absolute;
+    left: 12%;
+    margin-bottom: -100px;
+  }
+
+  .Headquarters {
+    position: absolute;
+    left: 67%;
+    margin-bottom: 280px;
+  }
+
+  .Connections {
+    position: absolute;
+    left: 67%;
+    margin-bottom: 45px;
+  }
+
+  .IconImagesContainer {
+    width: 15px;
+    position: absolute;
+    right: 50%;
+  }
+}

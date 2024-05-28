@@ -1,0 +1,250 @@
+.NavbarContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+}
+
+.LogoContainer {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  height: 22px;
+  left: 70px;
+  top: 29px;
+
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.LogoHeaderText {
+  font-weight: 600;
+  font-family: "League Spartan", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #f8f9fa;
+}
+
+.LinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 40%;
+  width: auto;
+  height: auto;
+}
+
+.IconImage {
+  cursor: pointer;
+}
+
+.NavMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavItem {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.NavItemActive {
+  margin-left: 20px;
+  list-style: none;
+  border-bottom: 2px solid #d4a373;
+}
+
+.NavLink {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.NavbarLine {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  color: #e5e5e5;
+  cursor: pointer;
+
+  border: 0.5px solid #e5e5e5;
+  transform: rotate(90deg);
+}
+
+.SearchContainer {
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+  z-index: 100;
+}
+
+.SearchContainer.active {
+  width: 340px;
+  margin-left: -310px;
+  background-color: #fff;
+}
+
+.SearchContainer .Icon {
+  /* position: absolute;
+  right: 0; */
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.SearchContainer .Icon::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid #fff;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+}
+
+.SearchContainer .Icon::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background: #fff;
+  transform: translate(5px, 5px) rotate(315deg);
+}
+
+.SearchContainer .Icon.active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+}
+
+.SearchContainer .Icon.active::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background: black;
+  transform: translate(5px, 5px) rotate(315deg);
+}
+
+.SearchInput {
+  display: none;
+}
+
+.SearchInput.active {
+  display: contents;
+}
+
+.SearchInput input {
+  width: 83%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-right: 18px;
+  border: none;
+  outline: none;
+}
+
+.SearchClear {
+  position: relative;
+  left: 290px;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.SearchClear::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.SearchClear::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: black;
+  transform: rotate(315deg);
+}
+
+/* For the hamburger */
+
+.HamburgerContainer {
+  display: none;
+}
+
+/* The responsinve css onwards */
+
+/* Laptop from 1045px screen */
+@media screen and (max-width: 1000px) {
+  .LinksContainer {
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 30%;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .LinksContainer {
+    left: 20%;
+  }
+}
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+  .HamburgerContainer {
+    display: block;
+    position: absolute;
+    right: 0%;
+    margin-right: 10px;
+  }
+
+  .NavMenu {
+    display: none;
+  }
+}
